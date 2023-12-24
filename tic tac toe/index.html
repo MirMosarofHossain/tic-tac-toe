@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="game_header">
+            <p class="gName">tic tac toe</p>
+            <div id="player_info">
+                <div class="inBox">
+                    <label for="your_name">X :</label>
+                    <input id="your_name" type="text" value="You" placeholder="Your Name">
+                </div>
+
+                <div class="inBox">
+                    <label for="oppo_name">O :</label>
+                    <input id="oppo_name" type="text" value="Sunny Leone" placeholder="Opponent Name">
+                </div>
+
+            </div>
+
+            <button id="start">START</button>
+
+        </div>
+
+        <div id="game_container">
+            <p class="gName">tic tac toe</p>
+            <div class="battle_info">
+                <div class="box">
+                    <div class="turn" id="your_turn"></div>
+                    <span id="you">you(X)</span>
+                </div>
+                <p>VS</p>
+                <div class="box">
+                    <div class="turn" id="oppo_turn"></div>
+                    <span id="oppo">opop(O)</span>
+                </div>
+            </div>
+
+            <div id="game">
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+
+            </div>
+
+            <div class="game_footer">
+                <button class="restart click">RESTART</button>
+                <button id="reset" class="click">RESET</button>
+            </div>
+        </div>
+
+        <div id="win_sec">
+
+            <div class="win_msg">
+                <p>CONGRATULATION</p>
+                <p><span id="winner">YOU </span>WIN</p>
+            </div>
+
+            <div class="win_footer">
+                <button class="play_again click_in_win">PLAY AGAIN</button>
+                <button class="restart click_in_win">RESTART</button>
+            </div>
+
+        </div>
+
+        <div id="game_over-sec">
+            <button class="play_again bottom click_in_win">PLAY AGAIN</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
